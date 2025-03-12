@@ -1,3 +1,180 @@
+/* navbar-bar link */
+.navbar-nav .active{
+    animation: myAnim 0.3s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.navbar-nav .about{
+    animation: myAnim 0.6s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.navbar-nav .service{
+    animation: myAnim 0.9s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.navbar-nav .skills{
+    animation: myAnim 1.2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.navbar-nav .projects{
+    animation: myAnim 1.5s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.navbar-nav .contact{
+    animation: myAnim 1.8s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+/* section text animation */
+.hello{
+    animation: hello 1s ease 0s 1 normal forwards;
+}
+@keyframes hello {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.name{
+    animation: name 1s ease 0s 1 normal forwards;
+
+}
+
+.web{
+    animation: web 1s ease 0s 1 normal forwards;
+}
+@keyframes web {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes name {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+.para{
+    animation: para 1s ease 0s 1 normal forwards;
+}
+@keyframes para {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.link1{
+    animation: link 1.5s ease 0s 1 normal forwards;
+}
+@keyframes link {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+    20% {
+		opacity: 0.2;
+	}
+    40% {
+		opacity: 0.4;
+	}
+    60% {
+		opacity: 0.6;
+	}
+    90% {
+		opacity: 0.8;
+		
+	}
+    100% {
+        opacity: 1;
+	}
+
+	
+}
+
 /* section image animation  */
 .element {
     margin: 50px;
