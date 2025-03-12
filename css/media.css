@@ -1,0 +1,15 @@
+@media (min-width:1400px) {
+    .section{
+        height: 90vh;
+    }
+}
+@media (min-width:1200px) and (max-width:1399px){
+    .section{
+        height: 90vh;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .section{
+        height: 90vh;
+    }
+}
