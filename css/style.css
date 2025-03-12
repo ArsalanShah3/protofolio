@@ -1,3 +1,6 @@
+body{
+    background-color:rgba(33, 33, 78, 0.963);
+}
 .nav-con {
     background-color: rgb(2, 2, 66);
 }
@@ -21,7 +24,6 @@
 
 /* section  */
 .section {
-    background-color: rgb(19, 19, 51);
     color: white;
 }
 .section h2{
@@ -58,7 +60,7 @@
 /* about us  */
 .aboutus
 {
-    background-color: rgb(19, 19, 51);
+    
     /* height: 100vh; */
     position: relative;
     color: white;
