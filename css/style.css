@@ -1,5 +1,5 @@
 body{
-    background-color:rgba(33, 33, 78, 0.963);
+    background-color:rgba(35, 35, 111, 0.963);
 }
 .nav-con {
     background-color: rgb(2, 2, 66);
@@ -88,6 +88,7 @@ body{
     box-shadow: 0 4px 8px 0 rgba(228, 227, 227, 0.2), 0 6px 20px 0 rgba(217, 217, 217, 0.19);
     width: 180px;
 }
+
 
 
 
