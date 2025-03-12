@@ -44,6 +44,13 @@ body{
     color: rgba(79, 238, 238, 0.863) ;
     font-size: 20px;
 }
+.section .link .link1:hover{
+    background-color: rgba(0, 0, 0, 0.712);
+    box-shadow: 0 4px 8px 0 rgba(228, 227, 227, 0.276), 0 6px 20px 0 rgba(217, 217, 217, 0.19);
+    
+    
+
+}
 .section button{
     padding-inline: 20px;
     border-radius: 20px;
