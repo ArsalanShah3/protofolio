@@ -1,5 +1,5 @@
 body{
-    background-color:rgba(35, 35, 111, 0.963);
+    background-color:rgba(6, 6, 50, 0.836);
 }
 .nav-con {
     background-color: rgb(2, 2, 66);
@@ -88,7 +88,15 @@ body{
     box-shadow: 0 4px 8px 0 rgba(228, 227, 227, 0.2), 0 6px 20px 0 rgba(217, 217, 217, 0.19);
     width: 180px;
 }
-
+/* my projects */
+.myproject{
+    height: 80vh;
+    color: white;
+}
+.myproject h1{
+    font-size: 40px;
+    font-weight: 900;
+}
 
 
 

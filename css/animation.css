@@ -187,7 +187,7 @@
     padding-left: 30px;
   }
   
-  img {
+  .element img {
     width: 100%;
     height: 100%;
     animation: glowImage 1.5s linear infinite alternate;
@@ -206,3 +206,11 @@
        filter: brightness();
     }
   }
+
+
+
+
+
+
+
+  
