@@ -59,7 +59,7 @@
 .aboutus
 {
     background-color: rgb(19, 19, 51);
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     color: white;
 }

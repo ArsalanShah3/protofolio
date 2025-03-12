@@ -2,14 +2,33 @@
     .section{
         height: 90vh;
     }
+    .element{
+        height: 350px;
+        width: 350px;
+    }
 }
 @media (min-width:1200px) and (max-width:1399px){
     .section{
         height: 90vh;
     }
+    .element{
+        height: 350px;
+        width: 350px;
+    }
 }
 @media (min-width:992px) and (max-width:1199px){
     .section{
         height: 90vh;
+    }
+    .element{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    
+    .element{
+        height: 350px;
+        width: 350px;
     }
 }
