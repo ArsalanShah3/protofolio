@@ -31,4 +31,14 @@
         height: 350px;
         width: 350px;
     }
+    .aboutus .row{
+        flex-direction: column-reverse;
+    }
+}
+@media (min-width:300px) and (max-width:767px){
+    
+    
+    .aboutus .row{
+        flex-direction: column-reverse;
+    }
 }
