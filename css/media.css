@@ -9,8 +9,10 @@
 }
 @media (min-width:1200px) and (max-width:1399px){
     .section{
-        /* height: 90vh; */
+        height: 100vh;
     }
+    
+    
     .element{
         height: 350px;
         width: 350px;
