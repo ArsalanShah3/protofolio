@@ -13,7 +13,7 @@ body{
 }
 
 .container-fluid a:hover {
-    color: rgb(11, 168, 231) !important;
+    /* color: rgb(11, 168, 231) !important; */
 }
 
 .navbar-toggler {
