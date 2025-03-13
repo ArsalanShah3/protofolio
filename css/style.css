@@ -45,7 +45,7 @@ body{
     font-size: 20px;
 }
 .section .link .link1:hover{
-    background-color: rgba(20, 114, 255, 0.712);
+    /* background-color: rgba(20, 114, 255, 0.712); */
     box-shadow: 0 4px 8px 0 rgba(228, 227, 227, 0.276), 0 6px 20px 0 rgba(217, 217, 217, 0.19);
     
     
@@ -152,6 +152,8 @@ body{
     
 }
 
-
+#about {
+    scroll-margin-top: 80px; /* Adjust this value based on your navbar height */
+}
 
 
