@@ -1,0 +1,33 @@
+
+< coursel >
+<div class="container-fluid myproject" id="project" data-bs-spy="scroll" data-bs-target="#navId">
+
+      <div class="container py-md-">
+        <h1 class="text-center py-3">My <span style="color: rgb(9, 129, 241);">Projects</span></h1>
+        <div id="carouselExample" class="carousel slide ">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/arsalan3.netlify.app_.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <a href="https://gamepadstore.netlify.app/"><img src="images/gamepadstore.netlify.app_ (1).png" class="d-block w-100" alt="..."></a>
+            </div>
+            <div class="carousel-item">
+              <img src="images/arsalanshah.netlify.app_.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+     </div>
+
+
+     < coursel >
