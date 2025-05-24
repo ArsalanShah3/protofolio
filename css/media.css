@@ -1,46 +1,94 @@
 @media (min-width:1400px) {
-    .section{
-        height: 90vh;
-    }
-    .element{
-        height: 350px;
-        width: 350px;
-    }
+
 }
 @media (min-width:1200px) and (max-width:1399px){
-    .section{
-        height: 100vh;
-    }
-    
-    
-    .element{
-        height: 350px;
-        width: 350px;
-    }
+ 
 }
 @media (min-width:992px) and (max-width:1199px){
-    .section{
-        height: 90vh;
-    }
-    .element{
-        height: 350px;
-        width: 350px;
-    }
+   
 }
 @media (min-width:768px) and (max-width:991px){
-    
-    .element{
-        height: 350px;
-        width: 350px;
+    .section{height: auto}
+    .hello{padding-top: 100px;
+    font-size: 50px;
     }
-    .aboutus .row{
-        flex-direction: column-reverse;
+    .element{margin-block: 50px;
+    height: 400px;
+    width: 400px;
+    padding-left: 10px;
     }
+   .name{
+        padding-block: 15px;
+        font-size: 50px;
+    }
+    .web{
+        font-size: 30px;
+    }
+    .abbtn{
+        margin-top: 20px;
+    }
+    .para{
+        font-size: 20px;
+        margin-block: 15px;
+    }
+   .aboutcol{
+    flex-direction: column-reverse;
+   }
+
 }
-@media (min-width:300px) and (max-width:767px){
-    
-    
-    .aboutus .row{
-        flex-direction: column-reverse;
+@media (min-width:550px) and (max-width:767px){
+  .section{height: auto;}
+  .hello{padding-top: 100px;
+    font-size: 40px;
+}
+  .element{
+    height: 350px;
+    width: 350px;
+    margin-top: 50px;
+  }
+   .name{
+        padding-block: 15px;
+        font-size: 40px;
     }
+    .web{
+        font-size: 30px;
+    }
+    .abbtn{
+        margin-top: 20px;
+    }
+    .para{
+        font-size: 20px;
+        margin-block: 15px;
+    }
+    .aboutcol{
+    flex-direction: column-reverse;
+   }
+}
+@media (min-width:300px) and (max-width:549px){
+  .section{height: auto;}
+  .hello{padding-top: 100px;
+    font-size: 35px;
+}
+  .element{
+    height: 290px;
+    width: 290px;
+    margin-top: 50px;
+  }
+   .name{
+        padding-block: 15px;
+        font-size: 35px;
+    }
+    .web{
+        font-size: 20px;
+    }
+    .abbtn{
+        margin-top: 20px;
+    }
+    .para{
+        font-size: 18px;
+        margin-block: 15px;
+    }
+    .aboutcol{
+    flex-direction: column-reverse;
+   }
 }

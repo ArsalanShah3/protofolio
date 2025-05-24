@@ -19,54 +19,63 @@
      <link rel="stylesheet" href="css/media.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent">
-    <!-- header section Start -->
+ <!-- Bootstrap CSS & Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<div class="container-fluid nav">
+<nav class="navbar navbar-expand-lg container ">
+  <div class="container-fluid">
 
-    <div class="container-fluid nav-con position-sticky top-0 z-3">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Portfolio.</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav nav-pills">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link about" href="#about">About</a>
-                      </li>
-                      
-                      <li class="nav-item">
-                        <a class="nav-link skills" href="#">Skills</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link projects" href="#project">Projects</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link contact" href="#contact">Contact</a>
-                      </li>
-                     
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </div>
+    <!-- Left: Logo + Name -->
+    <a class="navbar-brand  d-flex align-items-center" href="#">
+      <!-- Optional Logo Image -->
+      <!-- <img src="your-logo.png" alt="Logo" width="40" height="40" class="me-2"> -->
+      <strong style="color: white;">Arsalan Shah</strong>
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Center: Nav links -->
+      <ul class="navbar-nav nav-pills mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" style="color: white;" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+        <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Certificate</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+      </ul>
+
+      <!-- Right: Social Icons -->
+      <div class="d-flex gap-3">
+        <a class="nav-link" href="https://github.com/ArsalanShah3" target="_blank"><i class="bi bi-github fs-5"></i></a>
+        <a class="nav-link" href="https://www.linkedin.com/in/arsalan-shah-/" target="_blank"><i class="bi bi-linkedin fs-5"></i></a>
+        <a class="nav-link" href="https://wa.me/923001234567" target="_blank"><i class="bi bi-whatsapp fs-5 "></i></a>
+      </div>
+
     </div>
+  </div>
+</nav>
+</div>
 
-    <!-- header section End -->
+    <!-- navbar end -->
 
-    <!-- section for banner start -->
-     <section class="container-fluid section    ps-4 " id="home" >
-      <div class="container">
-        <div class="row   pt-md-4 pt-2">
-          <div class="col-lg-6 col-12  d-flex flex-column justify-content-center py-3">
+    <!-- hero section start -->   
+    <div class="container-fluid sec" style="border-bottom: 2px solid white;">
+    <section class="container section " id="home" >
+      <div>
+        <div class="row sec1">
+          <div class="col-lg-6 col-12  d-flex flex-column justify-content-center">
             <h2 class="hello">Hello, It's Me</h2>
             <h1 class="name">Arsalan Shah</h1>
-            <h2 class="web">And I'm a <span style="color: rgb(9, 129, 241);">Web Developer</span></h2>
-            <p class="py-3 para" style="color: rgba(255, 255, 255, 0.824);">I'm a full-stack web-developer,a passionate web developer with expertise in creating dynamic, user-friendly websites. I specialize in front-end and back-end development</p>
-            <div class="link d-flex position-relative gap-3">
+            <h2 class="web">And I'm a <span class="typing-text" style="color: rgb(9, 129, 241);"></span></h2>
+            <p class="para" style="color: rgba(255, 255, 255, 0.763);">I'm a full-stack web-developer,a passionate web developer with expertise in creating dynamic, user-friendly websites. I specialize in front-end and back-end development</p>
+            <div class="link py-3 d-flex position-relative gap-3">
               <div class="link1 d-flex justify-content-center align-items-center">
                 <i class="fa-brands fa-linkedin-in"></i>
               </div>
@@ -74,17 +83,17 @@
                 <i class="fa-brands fa-facebook-f"></i>
               </div>
               <div class="link1 d-flex justify-content-center align-items-center">
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
               </div>
               <div class="link1 d-flex justify-content-center align-items-center">
                 <i class="fa-brands fa-whatsapp"></i>
               </div>
             </div>
-            <button class="mt-4">
+            <button class="abbtn">
               More About Me
             </button>
           </div>
-          <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center py-3">
+          <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center ">
             <div class="element">
               <img src="images/1737206648290-removebg-preview.png">
             </div>
@@ -93,109 +102,255 @@
         </div>
       </div>
      </section>
-    <!-- section for banner end -->
-    <!-- about us  start-->
-     <div class="container-fluid aboutus ps-3  d-flex justify-content-center align-items-center" id="about" data-bs-spy="scroll" data-bs-target="#navId"> 
-      <div class="container">
-        <div class="row pt-md-4 pt-0 ">
-          <div class="col-lg-6 col-12 py-3 d-flex justify-content-center align-items-center ">
+    </div> 
+    <!-- hero section end -->
+    <!-- about section start -->
+    <div class="container-fluid about" style="border-bottom: 2px solid white;">
+      <section class="container section" id="about">
+        <div class="row aboutcol">
+          <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
             <div class="element">
               <img src="images/1737206648290-removebg-preview.png">
             </div>
           </div>
-          <div class="col-lg-6 col-12  px-4 py-3">
-            <h1>About <span style="color: rgb(9, 129, 241);">Me</span></h1>
-            <h2>Full Stack Developer</h2>
-            <p class="py-3">
-              
-              "I'm a passionate Full-Stack Developer with expertise in building dynamic, user-friendly web applications. With experience in both front-end and back-end technologies, I specialize in creating seamless digital experiences from concept to deployment. Proficient in modern frameworks, databases, and cloud solutions, I thrive on solving complex problems and optimizing performance. Whether working with JavaScript, React, Node.js, or other cutting-edge tools, I’m always eager to learn and push the boundaries of web development."
-              </p>
-              <button>
-                More About Me
-              </button>
-
-          </div>
-        </div>
-      </div>
-
-     </div>
-
-    <!-- about us  end-->
-
-
-    <!-- my projects start -->
-     <div class="container-fluid myproject" id="project" data-bs-spy="scroll" data-bs-target="#navId">
-
-      <div class="container py-md-3">
-        <h1 class="text-center py-3">My <span style="color: rgb(9, 129, 241);">Projects</span></h1>
-        <div class="row justify-content-center">
-          <div class="col-xl col-md-5 col-12 py-3">
-            <a href="https://gamepadstore.netlify.app/"><img src="images/gamepadstore.netlify.app_ (1).png" alt="" style="height: 300px;
-            width: 100%;"></a>
-          </div>
-          <div class="col-xl col-md-5 col-12 py-3">
-            <a href="https://arsalan3.netlify.app/"><img src="images/arsalan3.netlify.app_.png" alt="" style="height: 300px;
-            width: 100%;"></a>
-          </div>
-          <div class="col-xl col-md-5 col-12 py-3">
-            <a href="https://arsalanshah.netlify.app/"><img src="images/arsalanshah.netlify.app_.png" alt="" style="height: 300px;
-            width: 100%;"></a>
-          </div>
-        </div>
-      </div>
-
-     </div>
-    <!-- my projects end -->
-
-
-    <!-- contact us  -->
-     <div class="contactme py-5 container-fluid d-flex justify-content-center align-items-center" id="contact" data-bs-spy="scroll" data-bs-target="#navId">
-       <div class="container pt-5">
-       
-        <div class="row ">
-          
-          <div class="col-lg-6 col-12">
-            <h1 class="text-center">Conatct <span style="color: rgb(9, 129, 241);">Us</span></h1>
-            <h2>Lets Work Together</h2>
-            <p class="py-3">
-              
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dicta corporis laborum, saepe officia commodi natus modi velit suscipit porro accusamus, temporibus obcaecati quo inventore maxime eius minus quae maiores.
-              </p>
-              <div class="py-2">
-                <i class="fa-solid fa-envelope"></i> <span>arsalanshah563738@gmail.com</span>
-              </div>
-              <div class="py-2">
-                <i class="fa-solid fa-phone"></i><span>+92 3700102419</span>
-              </div>
-              <div class="link d-flex position-relative gap-3 py-3">
-                <div class="link1 d-flex justify-content-center align-items-center">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-                <div class="link1 d-flex justify-content-center align-items-center">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </div>
-                <div class="link1 d-flex justify-content-center align-items-center">
-                  <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="link1 d-flex justify-content-center align-items-center">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </div>
-              </div>
-          </div>
-          <div class="col-lg-6 col-12 ">
-            <input type="text" placeholder="Name" class="input">
-            <input type="text" placeholder="Email" class="input">
-            <input type="text" placeholder="Phone Number" class="input">
-            <input type="" placeholder="Message" class="input">
-            <button class="my-5 " >
-              SEND
+          <div class="col-lg-6 col-12 d-flex flex-column justify-content-center">
+            <h2 class="about1">ABOUT ME</h2>
+            <h1 class="web1 pt-2">FULL STACK DEVELOPER</h1>
+            <p class="para py-2" style="color: rgba(255, 255, 255, 0.763);">"I'm a passionate Full-Stack Developer with expertise in building dynamic, user-friendly web applications. With experience in both front-end and back-end technologies, I specialize in creating seamless digital experiences from concept to deployment. Proficient in modern frameworks, databases, and cloud solutions, I thrive on solving complex problems and optimizing performance. Whether working with JavaScript, React, Node.js, or other cutting-edge tools, I’m always eager to learn and push the boundaries of web development."</p>
+            <button class="abbtn">
+              More About Me
             </button>
           </div>
         </div>
+      </section>    
+    </div>
+    <!-- about section end -->  
+     <!-- SKILL SECTION START -->
+      <div class="container-fluid skill-section" id="skill" style="border-bottom: 2px solid white;">
+  <div class="container pt-md-5" >
+    <h1 class="text-center py-5" style="color: white;" >My Skills</h1>
+    <div class="skills">
+      <!-- Professional Skills -->
+      <div class="skills-column">
+        <h2>Professional Skills</h2>
+        <div class="skill-bar">
+          <p><span>Time Management</span><span>90%</span></p>
+          <div class="bar-container">
+            <div class="bar" style="--width: 90%;"><span class="percentage-label">90%</span></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p><span>Effective Communication</span><span>85%</span></p>
+          <div class="bar-container">
+            <div class="bar" style="--width: 85%;"><span class="percentage-label">85%</span></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p><span>Team Collaboration</span><span>88%</span></p>
+          <div class="bar-container">
+            <div class="bar" style="--width: 88%;"><span class="percentage-label">88%</span></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p><span>Problem Solving</span><span>80%</span></p>
+          <div class="bar-container">
+            <div class="bar" style="--width: 80%;"><span class="percentage-label">80%</span></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p><span>Leadership</span><span>75%</span></p>
+          <div class="bar-container">
+            <div class="bar" style="--width: 75%;"><span class="percentage-label">75%</span></div>
+          </div>
+        </div>
       </div>
-     </div>
+      <!-- Technical Skills -->
+      <div class="skills-column">
+        <h2>Technical Skills</h2>
+        <div class="skill-bar">
+          <p><span>HTML</span><span>95%</span></p>
+          <div class="bar-container">
+            <div class="bar" style="--width: 95%;"><span class="percentage-label">95%</span></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p><span>CSS</span><span>90%</span></p>
+          <div class="bar-container">
+            <div class="bar" style="--width: 90%;"><span class="percentage-label">90%</span></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p><span>JavaScript</span><span>85%</span></p>
+          <div class="bar-container">
+            <div class="bar" style="--width: 85%;"><span class="percentage-label">85%</span></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p><span>PHP</span><span>80%</span></p>
+          <div class="bar-container">
+            <div class="bar" style="--width: 80%;"><span class="percentage-label">80%</span></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p><span>MySQL</span><span>78%</span></p>
+          <div class="bar-container">
+            <div class="bar" style="--width: 78%;"><span class="percentage-label">78%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- SKILL SECTION END -->
+  <!-- Projects Section Start -->
+   
+  <div class="container con " id="project">
+    <div class="projects-header">
+      <h1 class="text-center" style="margin-top: 80px;">My Projects</h1>
+      <p class="mb-5">
+        Explore some of the projects I have worked on using various web
+        development technologies.
+      </p>
+    </div>
+
+    <div class="projects-carousel">
+      <button
+        class="carousel-btn prev-btn"
+        onclick="moveSlide(-1)"
+        aria-label="Previous"
+      >
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="projects-container" id="carousel">
+        <div class="project-card">
+          <img
+            src="images/gamepadstore.netlify.app_ (1).png"
+            class="project-img"
+            alt="Project 1"
+          />
+          <div class="project-info">
+            <h3>Gamepad Store</h3>
+            <p>
+              This is a description of the first project. It showcases design and
+              responsive features.
+            </p>
+            <div class="tech-used">
+               <span>HTML</span>
+              <span>CSS</span>
+              <span>BOOTSTRAP</span>
+              <span>JAVASCRIPT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://gamepadstore.netlify.app/" target="_blank" class="project-link live-demo"
+                ><i class="fas fa-globe"></i> Live Demo</a
+              >
+              <a href="https://github.com/ArsalanShah3/gamepad-website" target="_blank" class="project-link source-code"
+                ><i class="fab fa-github"></i> Source</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="images/restorn.png"
+            class="project-img"
+            alt="Project 2"
+          />
+          <div class="project-info">
+            <h3>RESTORN</h3>
+            <p>A creative solution built with PHP and Bootstrap for an eCommerce interface.</p>
+            <div class="tech-used">
+                <span>HTML</span>
+              <span>CSS</span>
+              <span>BOOTSTRAP</span>
+              <span>JAVASCRIPT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://restoran3.netlify.app/" target="_blank" class="project-link live-demo"
+                ><i class="fas fa-globe"></i> Live Demo</a
+              >
+              <a href="https://github.com/ArsalanShah3/Restron" target="_blank" class="project-link source-code"
+                ><i class="fab fa-github"></i> Source</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="images/ecommerence.png"
+            class="project-img"
+            alt="Project 3"
+          />
+          <div class="project-info">
+            <h3>ECommerce Store</h3>
+            <p>Custom WordPress theme development for client portfolio with Elementor.</p>
+            <div class="tech-used">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>BOOTSTRAP</span>
+              <span>JAVASCRIPT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://arsalanshahstore.netlify.app/" class="project-link live-demo"
+                ><i class="fas fa-globe"></i> Live Demo</a
+              >
+              <a href="https://github.com/ArsalanShah3/E-Commerence" class="project-link source-code"
+                ><i class="fab fa-github"></i> Source</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="images/guard.png"
+            class="project-img"
+            alt="Project 4"
+          />
+          <div class="project-info">
+            <h3>GUARD</h3>
+            <p>JavaScript SPA (Single Page App) with smooth routing and API integration.</p>
+            <div class="tech-used">
+                 <span>HTML</span>
+              <span>CSS</span>
+              <span>BOOTSTRAP</span>
+              <span>JAVASCRIPT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://arsalan3.netlify.app/" class="project-link live-demo"
+                ><i class="fas fa-globe"></i> Live Demo</a
+              >
+              <a href="https://github.com/ArsalanShah3/Guard-Website" class="project-link source-code"
+                ><i class="fab fa-github"></i> Source</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-btn next-btn"
+        onclick="moveSlide(1)"
+        aria-label="Next"
+      >
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <div class="carousel-dots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+    </div>
+  </div>
+  <!-- Projects Section End -->
 
     <!-- Bootstrap js -->
      <script src="js/js/bootstrap.bundle.min.js"></script>
+     <script src="app.js"></script>
 </body>
 </html>

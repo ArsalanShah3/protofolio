@@ -1,159 +1,409 @@
-body{
-    background-color:rgba(6, 6, 50, 0.836);
-}
-.nav-con {
-    background-color: rgb(2, 2, 66);
-}
-
-.container-fluid a {
-    color: white !important;
-
-
-
-}
-
-.container-fluid a:hover {
-    /* color: rgb(11, 168, 231) !important; */
-}
-
-.navbar-toggler {
-
-    background-color: rgb(255, 255, 255);
-
-}
-
-/* section  */
-.section {
-    color: white;
-}
-.section h2{
-    font-size: 30px;
-    font-weight: 600;
-}
-.section h1{
-    font-size: 40px;
-    font-weight: 900;
-}
-.section .link .link1{
-    height: 40px;
-    width: 40px;
-    border: 2px solid rgba(79, 238, 238, 0.863);
-    border-radius: 50%;
-}
-.section .link .link1 i{
-    color: rgba(79, 238, 238, 0.863) ;
-    font-size: 20px;
-}
-.section .link .link1:hover{
-    /* background-color: rgba(20, 114, 255, 0.712); */
-    box-shadow: 0 4px 8px 0 rgba(228, 227, 227, 0.276), 0 6px 20px 0 rgba(217, 217, 217, 0.19);
-    
+   body {
+      margin: 0;
+      padding: 0;
+      background-color: #393e46;
+      /* overflow-x: hidden;  */
+      color: white;
+      overflow-x: hidden; /* افقی سکرول ہٹائیں */
+      overflow-y: auto;
+    }
     
 
-}
-.section button{
-    padding-inline: 20px;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    padding-block: 7px;
-    background-color: rgba(79, 238, 238, 0.863);
-    color: black;
-    font-weight: 700;
-    box-shadow: 0 4px 8px 0 rgba(228, 227, 227, 0.2), 0 6px 20px 0 rgba(217, 217, 217, 0.19);
-    width: 180px;
+    .nav {
+      /* background-color: #222831; */
+      /* overflow: hidden; */
+  background-color: #222831;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-/* about us  */
-.aboutus
-{
+    .navbar-nav .nav-link,
+    .active {
+      color: white;
+    }
+
+    .nav-link i {
+      color: white;
+    }
+    .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+    .navbar-toggler {
+  border: 1px solid white;
+}
+    .sec {
+      background-color: #393e46;
+    }
+
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .link1 {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      border: 2px solid #4AD3D9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .link1 i {
+      font-size: 18px;
+      color: #4AD3D9;
+      border: none;
+    }
+
+    .abbtn {
+      background-color:#4AD3D9;
+      border: none;
+      color: black;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      width: auto;
+      min-width: 150px;
+      max-width: 100%;
+      border-radius: 3px;
+    }
+
+    .element {
+      height: 350px;
+      width: 350px;
+
+      margin: 20px auto;
+      border-radius: 50%;
+      box-shadow: 0px 0px 9px 4px #747de8;
+      overflow: hidden;
+      background-color: #949494;
+    }
+
+    .element img {
+      width: 100%;
+      height: 100%;
+      /* object-fit: cover; */
+    }
+
+    .element img:hover {
+      transform: scale(1.1);
+      transition: 1.5s;
+    }
+
+    .hello,
+    .name,
+    .web {
+      color: white;
+    }
+
+    .link1:hover {
+      background-color: white;
+      transition: 0.5s;
+    }
+
+    .link1:hover i {
+      color: black !important;
+    }
+
+    .abbtn:hover {
+      /* background-color: #000; */
+      color: #fff;
+      transition: 0.5s;
+    }
+
+    .about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+    .about1{
+      font-size: 40px;
+      color: white;
+      font-weight: 800;
+      margin-top: 80px;
+    }
+    .web1{
+      font-size: 30px;
+      color: white;
+      font-weight: 800;
+    }
+
+
+
+     .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      margin: 50px 0;
+    }
+    .skills-column {
+      flex: 1;
+      min-width: 280px;
+    }
+    .skill-bar {
+      margin-bottom: 20px;
+    }
+    .bar-container {
+      background: #222831;
+      border-radius: 30px;
+      overflow: hidden;
+      height: 15px;
+    }
+    .bar {
+      height: 100%;
+      background-color: #4ad3d9;
+      width: 0;
+      animation: fillBar 2s forwards;
+    }
+    @keyframes fillBar {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: var(--width);
+      }
+    }
+    .percentage-label {
+      position: relative;
+      left: calc(100% - 30px);
+      font-size: 50px;
+      /* color: black; */
+    }
+    .skills h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #4ad3d9;
+    }
+    .skills-column p {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 5px 0;
+    }
+    .skill-bar p{
+      color: white;
+    }
+
+    /* projects  */
     
-    /* height: 100vh; */
-    position: relative;
-    color: white;
-}
-.aboutus h1{
-    font-size: 40px;
-    font-weight: 900;
-}
-.aboutus button{
-    padding-inline: 20px;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    padding-block: 7px;
-    background-color: rgba(79, 238, 238, 0.863);
-    color: black;
-    font-weight: 700;
-    box-shadow: 0 4px 8px 0 rgba(228, 227, 227, 0.2), 0 6px 20px 0 rgba(217, 217, 217, 0.19);
-    width: 180px;
-}
-/* my projects */
-.myproject{
+projects-header {
+      text-align: center;
+      padding: 60px 0 40px;
+      border-bottom: 2px solid #333;
+      margin-bottom: 40px;
+      flex-shrink: 0;
+    }
+
+    .projects-header h1 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .projects-header p {
+      color: #aaa;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .projects-carousel {
+      position: relative;
+      width: 100%;
+      overflow: hidden; /* کاروسیل سے باہر content نہ دکھائیں */
+      flex-grow: 1; /* باقی جگہ پر کاروسیل بڑھنے دیں */
+    }
+
+    .projects-container {
+      display: flex;
+      transition: transform 0.5s ease;
+      gap: 30px;
+      will-change: transform;
+      padding-bottom: 20px; /* نیچے سے تھوڑا اسپیس تاکہ سکرول نا آئے */
+    }
+
+    .project-card {
+      flex: 0 0 calc(50% - 15px);
+      background: #2a2a2a;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-bottom: 2px solid #333;
+      display: block;
+    }
+
+    .project-info {
+      padding: 25px;
+    }
+
+    .project-info h3 {
+      color: #0981f1;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .project-info p {
+      color: #ccc;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .tech-used {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tech-used span {
+      background: rgba(9, 129, 241, 0.2);
+      color: #0981f1;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .live-demo {
+      background: #0981f1;
+      color: white;
+    }
+
+    .live-demo:hover {
+      background: #0a7bd8;
+    }
+
+    .source-code {
+      background: #333;
+      color: white;
+      border: 1px solid #444;
+    }
+
+    .source-code:hover {
+      background: #444;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      background: rgba(9, 129, 241, 0.7);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+
+    .carousel-btn:hover {
+      background: #0981f1;
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .prev-btn {
+      left: 10px;
+    }
+
+    .next-btn {
+      right: 10px;
+    }
+
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 30px;
+      flex-shrink: 0;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      background: #555;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .dot.active {
+      background: #0981f1;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 992px) {
+      .project-card {
+        flex: 0 0 100%;
+      }
+      .projects-carousel {
+        padding: 0 10px;
+      }
+      .carousel-btn {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .project-img {
+        height: 200px;
+      }
+      .projects-header h1 {
+        font-size: 1.8rem;
+      }
+      .projects-header p {
+        font-size: 1rem;
+      }
+    }
+    .con{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 60px; /* تھوڑا نیچے padding دیا تاکہ بٹن سکرول میں نہ جائیں */
+      min-height: 100vh; /* پورے ویو پورٹ کی ہائٹ کم از کم ہو */
+      display: flex;
+      flex-direction: column;
+    }
     
-    color: white;
-}
-.myproject h1{
-    font-size: 40px;
-    font-weight: 900;
-}
 
-
-/* contact me  */
-.contactme{
-    /* height: 100vh; */
-    color: white;
-}
-.contactme h1{
-    font-size: 40px;
-    font-weight: 900;
-}
-.contactme i{
-    color: rgba(79, 238, 238, 0.863) ;
-}
-
-.contactme .link .link1{
-    height: 40px;
-    width: 40px;
-    border: 2px solid rgba(79, 238, 238, 0.863);
-    border-radius: 50%;
-}
-.contactme .link .link1 i{
-    color: rgba(79, 238, 238, 0.863) ;
-    font-size: 20px;
-}
-.contactme .link .link1:hover{
-    background-color: rgba(20, 114, 255, 0.712);
-    box-shadow: 0 4px 8px 0 rgba(228, 227, 227, 0.276), 0 6px 20px 0 rgba(217, 217, 217, 0.19);
     
-
-}
-.contactme .input{
-    width: 100%;
-    height: 55px;
-    background-color: rgb(44, 52, 58);
-    outline: none;
-    border: none;
-    padding-inline: 20px;
-    border-radius: 50px;
-    margin-bottom: 14px;
-}
- .contactme button{
-    padding-inline: 20px;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    padding-block: 7px;
-    background-color: rgba(79, 238, 238, 0.863);
-    color: black;
-    font-weight: 700;
-    box-shadow: 0 4px 8px 0 rgba(228, 227, 227, 0.2), 0 6px 20px 0 rgba(217, 217, 217, 0.19);
-    width: 180px;
-    
-}
-
-#about , #project{
-    scroll-margin-top: 80px; /* Adjust this value based on your navbar height */
-}
-
-
